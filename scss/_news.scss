@@ -1,0 +1,128 @@
+.ba-section-news {
+  background: #0d7be2 url(../img/bg-new.jpg) 50%;
+  background-size: cover;
+  padding: 150px 0 210px;
+
+  &__title {
+    text-align: center;
+    font-size: 44px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    margin-bottom: 100px;
+    position: relative;
+
+    &:before {
+      content: "";
+      height: 2px;
+      background: #fff;
+      position: absolute;
+      width: 100px;
+      left: 500px;
+      top: -38px;
+    }
+  }
+}
+.ba-box-card {
+  max-width: 360px;
+  background: $white-color;
+}
+
+.ba-box-content {
+  color: $text-color;
+  padding-left: 20px;
+
+  &__title {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-family: $text-font-family;
+    margin-bottom: 40px;
+  }
+}
+.ba-autor {
+  display: flex;
+  & img {
+    padding-right: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+.ba-autor-title {
+  & h4 {
+    text-transform: uppercase;
+  }
+  & time {
+    color: #5ab8fc;
+    font-size: 14px;
+  }
+}
+
+.ba-card-slide {
+	position: relative;
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    font-size: 0;
+    width: 20px;
+    height: 42px;
+    margin-top: -21px;
+    padding: 40px;
+    background: url('data:image/svg+xml,\
+			 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="42" viewBox="0 0 366 1024">\
+			 <path fill="rgba(255,255,255)" d="M358.286 310.857q0 7.429-5.714 13.143l-224.571 224.571 224.571 224.571q5.714 5.714 5.714 13.143t-5.714 13.143l-28.571 28.571q-5.714 5.714-13.143 5.714t-13.143-5.714l-266.286-266.286q-5.714-5.714-5.714-13.143t5.714-13.143l266.286-266.286q5.714-5.714 13.143-5.714t13.143 5.714l28.571 28.571q5.714 5.714 5.714 13.143z"></path>\
+		 </svg>')
+      no-repeat 45%;
+    border: 1px solid $white-color;
+    border-radius: 50%;
+
+    &:hover {
+      opacity: 0.6;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  .slick-next {
+    right: -100px;
+    transform: rotate(180deg);
+  }
+  .slick-prev {
+    left: -100px;
+  }
+ .slick-dots {
+	position: absolute;
+	bottom: -30%;
+	left: 50%;
+	font-size: 0;
+	display: none;
+	transform: rotate(270deg);
+
+
+    .slick-active {
+      button {
+        background: $white-color;
+      }
+    }
+
+    button {
+      background: none;
+		border: 1px solid #fff;
+		border-radius: 50%;
+		padding: 5px;
+		margin-bottom: 20px;
+		outline: none;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.ba-box-card + .ba-box-card {
+  margin-left: 12px;
+}

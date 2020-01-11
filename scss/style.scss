@@ -1,0 +1,51 @@
+$medium: 640px;
+$large: 1024px;
+$primary-color: #2d4057;
+$white-color: #fff;
+$text-color: #57606b;
+
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i&display=swap");
+@import "normalize";
+@import "layout";
+@import "elements";
+@import "fonts";
+@import "slick.scss";
+
+$body-font-family: Gotham, sans-serif;
+$text-font-family: OpenSans, sans-serif;
+
+body {
+  font: 500 18px/1.5 $body-font-family;
+  color: $white-color;
+}
+
+p {
+  margin: 0;
+  font-family: $text-font-family;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+/* Layout */
+.ba-container {
+  padding-left: 30px;
+  padding-right: 30px;
+  max-width: 1170px;
+}
+
+@import "intro";
+@import "news";
+@import "footer";
+
+
+
+#map{
+	width: 100%;
+	height: 700px;
+	background: #cccccc;
+}

@@ -1,0 +1,17 @@
+.ba-footer{
+	background: #333 url(../img/bg-footer.jpg) 50%;
+	background-size: cover;
+	padding-top: 197px;
+	
+
+	&__socials{
+		display: flex;
+		padding-left: 800px;
+		margin-bottom: 50px;
+		
+	}
+	& p{
+		text-align: center;
+		padding-bottom: 200px;
+	}
+}
